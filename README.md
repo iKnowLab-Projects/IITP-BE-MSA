@@ -6,7 +6,7 @@ DeBERTa-v3-Large based multimodal sentiment analysis model for CMU-MOSEI 7-class
 
 | Model | Mult_acc_7 | Mult_acc_5 | Has0_acc_2 |
 |-------|-----------|-----------|-----------|
-| DeBERTa + Multimodal Fusion | **56.17%** | 57.83% | 83.59% |
+| DeBERTa + Multimodal Fusion | 56.17% | 57.83% | 83.59% |
 
 ## Architecture
 
@@ -17,6 +17,11 @@ DeBERTa-v3-Large based multimodal sentiment analysis model for CMU-MOSEI 7-class
 - **Cross-Modal Attention**: Bidirectional attention between text-audio and text-video
 - **Multi-task Learning**: Auxiliary classifiers for each modality
 
+## Model Checkpoint
+
+Pre-trained model weights are available on Hugging Face:
+- **Model**: [iknow-lab/multimodal-sentiment-model-with-augmentation](https://huggingface.co/iknow-lab/multimodal-sentiment-model-with-augmentation)
+
 ## Data
 
 This model is trained on CMU-MOSEI dataset with:
@@ -25,6 +30,8 @@ This model is trained on CMU-MOSEI dataset with:
 - 4,659 test samples
 
 Data format: PKL file with `raw_text`, `audio`, `vision`, and `regression_labels` fields.
+
+**Data Source**: [MMML (Multimodal Multi-Loss)](https://github.com/zehuiwu/MMML?tab=readme-ov-file)
 
 ## Training
 
@@ -112,19 +119,3 @@ scikit-learn>=1.3.0
 scipy>=1.11.0
 tqdm>=4.66.0
 ```
-
-## Citation
-
-If you use this code, please cite:
-
-```bibtex
-@misc{deberta-mosei-2024,
-  title={DeBERTa Multimodal Sentiment Analysis for CMU-MOSEI},
-  author={IITP Butterfly Effect Project},
-  year={2024}
-}
-```
-
-## License
-
-MIT License
