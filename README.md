@@ -1,4 +1,4 @@
-# DeBERTa Multimodal Sentiment Analysis
+# Multimodal Sentiment Analysis
 
 DeBERTa-v3-Large based multimodal sentiment analysis model for CMU-MOSEI 7-class classification.
 
@@ -6,7 +6,7 @@ DeBERTa-v3-Large based multimodal sentiment analysis model for CMU-MOSEI 7-class
 
 | Model | Mult_acc_7 | Mult_acc_5 | Has0_acc_2 |
 |-------|-----------|-----------|-----------|
-| DeBERTa + Multimodal Fusion | **56.17%** | 57.83% | 83.59% |
+| DeBERTa + Multimodal Fusion + Feature-level Augmentation | **56.17%** | 57.83% | 83.59% |
 
 ## Architecture
 
@@ -112,19 +112,3 @@ scikit-learn>=1.3.0
 scipy>=1.11.0
 tqdm>=4.66.0
 ```
-
-## Citation
-
-If you use this code, please cite:
-
-```bibtex
-@misc{deberta-mosei-2024,
-  title={DeBERTa Multimodal Sentiment Analysis for CMU-MOSEI},
-  author={IITP Butterfly Effect Project},
-  year={2024}
-}
-```
-
-## License
-
-MIT License
